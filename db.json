@@ -1,0 +1,331 @@
+{
+    "cargaisons": [
+        {
+            "id": 1,
+            "numero": "CAR-001",
+            "type": "maritime",
+            "poidsMax": 5000,
+            "distance": 1200,
+            "lieuDepart": {
+                "latitude": 14.6928,
+                "longitude": -17.4467,
+                "nom": "Dakar, S\u00e9n\u00e9gal"
+            },
+            "lieuArrivee": {
+                "latitude": 5.36,
+                "longitude": -4.0083,
+                "nom": "Abidjan, C\u00f4te d'Ivoire"
+            },
+            "etat": "EN_COURS",
+            "statut": "FERMEE",
+            "dateCreation": "2024-01-15T08:00:00Z",
+            "dateDepart": "2024-01-16T10:00:00Z",
+            "dateArrivee": null,
+            "prixTotal": 485000,
+            "produits": []
+        },
+        {
+            "id": 2,
+            "numero": "CAR-002",
+            "type": "aerienne",
+            "poidsMax": 2000,
+            "distance": 4200,
+            "lieuDepart": {
+                "latitude": 14.6928,
+                "longitude": -17.4467,
+                "nom": "Dakar, S\u00e9n\u00e9gal"
+            },
+            "lieuArrivee": {
+                "latitude": 48.8566,
+                "longitude": 2.3522,
+                "nom": "Paris, France"
+            },
+            "etat": "EN_ATTENTE",
+            "statut": "OUVERTE",
+            "dateCreation": "2024-01-20T14:30:00Z",
+            "dateDepart": null,
+            "dateArrivee": null,
+            "prixTotal": 250000,
+            "produits": []
+        },
+        {
+            "id": 3,
+            "numero": "CAR-003",
+            "type": "routiere",
+            "poidsMax": 8000,
+            "distance": 800,
+            "lieuDepart": {
+                "latitude": 14.6928,
+                "longitude": -17.4467,
+                "nom": "Dakar, S\u00e9n\u00e9gal"
+            },
+            "lieuArrivee": {
+                "latitude": 12.6392,
+                "longitude": -8.0029,
+                "nom": "Bamako, Mali"
+            },
+            "etat": "ARRIVE",
+            "statut": "FERMEE",
+            "dateCreation": "2024-01-10T09:15:00Z",
+            "dateDepart": "2024-01-12T06:00:00Z",
+            "dateArrivee": "2024-01-14T18:30:00Z",
+            "prixTotal": 650000,
+            "produits": []
+        },
+        {
+            "numero": "CAR-36668957B",
+            "type": "aerienne",
+            "poidsMax": 10,
+            "distance": 4207,
+            "lieuDepart": {
+                "nom": "Dakar, S\u00e9n\u00e9gal",
+                "latitude": 14.6928,
+                "longitude": -17.4467
+            },
+            "lieuArrivee": {
+                "nom": "Paris, France",
+                "latitude": 48.8566,
+                "longitude": 2.3522
+            },
+            "etat": "EN_ATTENTE",
+            "statut": "OUVERTE",
+            "dateCreation": "2025-08-16T17:51:29+00:00",
+            "dateDepart": null,
+            "dateArrivee": null,
+            "prixTotal": 10000,
+            "produits": []
+        }
+    ],
+    "clients": [
+        {
+            "id": 1,
+            "clientId": "CLI-001",
+            "nom": "Dupont",
+            "prenom": "Jean",
+            "telephone": "+221701234567",
+            "adresse": "Plateau, Dakar",
+            "email": "jean.dupont@email.com"
+        },
+        {
+            "id": 2,
+            "clientId": "CLI-002",
+            "nom": "Martin",
+            "prenom": "Marie",
+            "telephone": "+221702345678",
+            "adresse": "Almadies, Dakar",
+            "email": "marie.martin@email.com"
+        },
+        {
+            "id": 3,
+            "clientId": "CLI-003",
+            "nom": "Diallo",
+            "prenom": "Amadou",
+            "telephone": "+221703456789",
+            "adresse": "M\u00e9dina, Dakar",
+            "email": "amadou.diallo@email.com"
+        },
+        {
+            "nom": "Fall",
+            "prenom": "Papa Sidy",
+            "telephone": "775943708",
+            "email": "papasidyfall03@gmail.com",
+            "adresse": "Thies",
+            "id": "CLI-367107E2D1"
+        },
+        {
+            "nom": "Fall",
+            "prenom": "Amadou",
+            "telephone": "762126377",
+            "email": "papasidyfall03@gmail.com",
+            "adresse": "Paris",
+            "id": "CLI-67107E2D6"
+        }
+    ],
+    "colis": [
+        {
+            "id": 1,
+            "code": "COL-123456",
+            "expediteur": {
+                "id": "CLI-001",
+                "nom": "Dupont",
+                "prenom": "Jean",
+                "telephone": "+221701234567",
+                "adresse": "Plateau, Dakar",
+                "email": "jean.dupont@email.com"
+            },
+            "destinataire": {
+                "id": "CLI-002",
+                "nom": "Martin",
+                "prenom": "Marie",
+                "telephone": "+221702345678",
+                "adresse": "Almadies, Dakar",
+                "email": "marie.martin@email.com"
+            },
+            "produits": [
+                {
+                    "type": "alimentaire",
+                    "libelle": "Riz parfum\u00e9",
+                    "poids": 25
+                }
+            ],
+            "cargaisonNumero": "CAR-001",
+            "etat": "EN_COURS",
+            "dateCreation": "2024-01-15T10:30:00Z",
+            "dateExpedition": "2024-01-16T10:00:00Z",
+            "prix": 10000
+        },
+        {
+            "id": 2,
+            "code": "COL-789012",
+            "expediteur": {
+                "id": "CLI-003",
+                "nom": "Diallo",
+                "prenom": "Amadou",
+                "telephone": "+221703456789",
+                "adresse": "M\u00e9dina, Dakar",
+                "email": "amadou.diallo@email.com"
+            },
+            "destinataire": {
+                "id": "CLI-001",
+                "nom": "Dupont",
+                "prenom": "Jean",
+                "telephone": "+221701234567",
+                "adresse": "Plateau, Dakar",
+                "email": "jean.dupont@email.com"
+            },
+            "produits": [
+                {
+                    "type": "fragile",
+                    "libelle": "Ordinateur portable",
+                    "poids": 2.5
+                }
+            ],
+            "cargaisonNumero": "CAR-002",
+            "etat": "EN_ATTENTE",
+            "dateCreation": "2024-01-20T16:45:00Z",
+            "prix": 15000
+        },
+        {
+            "id": 3,
+            "code": "COL-345678",
+            "expediteur": {
+                "id": "CLI-002",
+                "nom": "Martin",
+                "prenom": "Marie",
+                "telephone": "+221702345678",
+                "adresse": "Almadies, Dakar",
+                "email": "marie.martin@email.com"
+            },
+            "destinataire": {
+                "id": "CLI-003",
+                "nom": "Diallo",
+                "prenom": "Amadou",
+                "telephone": "+221703456789",
+                "adresse": "M\u00e9dina, Dakar",
+                "email": "amadou.diallo@email.com"
+            },
+            "produits": [
+                {
+                    "type": "incassable",
+                    "libelle": "Outils de menuiserie",
+                    "poids": 15
+                }
+            ],
+            "cargaisonNumero": "CAR-003",
+            "etat": "RECUPERE",
+            "dateCreation": "2024-01-10T11:20:00Z",
+            "dateExpedition": "2024-01-12T06:00:00Z",
+            "dateArrivee": "2024-01-14T18:30:00Z",
+            "dateRecuperation": "2024-01-15T09:15:00Z",
+            "prix": 12000
+        },
+        {
+            "code": "COL-36710732E2DB",
+            "expediteur": {
+                "nom": "Fall",
+                "prenom": "Papa Sidy",
+                "telephone": "775943708",
+                "email": "papasidyfall03@gmail.com",
+                "adresse": "Thies",
+                "id": "CLI-367107E2D1"
+            },
+            "destinataire": {
+                "nom": "Fall",
+                "prenom": "Amadou",
+                "telephone": "762126377",
+                "email": "papasidyfall03@gmail.com",
+                "adresse": "Paris",
+                "id": "CLI-67107E2D6"
+            },
+            "produits": [
+                {
+                    "type": "fragile",
+                    "libelle": "Telephone",
+                    "poids": 1
+                }
+            ],
+            "cargaisonNumero": "CAR-36668957B",
+            "etat": "EN_COURS",
+            "dateCreation": "2025-08-16T17:58:27+00:00",
+            "dateExpedition": "2025-08-16T17:58:27+00:00",
+            "prix": 10000
+        }
+    ],
+    "gestionnaires": [
+        {
+            "id": "GES-001",
+            "username": "admin",
+            "password": "admin123",
+            "nom": "Administrateur",
+            "prenom": "Syst\u00e8me",
+            "email": "admin@gpdumonde.com"
+        }
+    ],
+    "parametres": {
+        "prixMinimumColis": 10000,
+        "dureeArchivageAutomatique": 30,
+        "typesProduitsDisponibles": [
+            "alimentaire",
+            "chimique",
+            "fragile",
+            "incassable"
+        ],
+        "typesCargaisonsDisponibles": [
+            "maritime",
+            "aerienne",
+            "routiere"
+        ],
+        "coordonneesVilles": [
+            {
+                "nom": "Dakar, S\u00e9n\u00e9gal",
+                "latitude": 14.6928,
+                "longitude": -17.4467
+            },
+            {
+                "nom": "Abidjan, C\u00f4te d'Ivoire",
+                "latitude": 5.36,
+                "longitude": -4.0083
+            },
+            {
+                "nom": "Paris, France",
+                "latitude": 48.8566,
+                "longitude": 2.3522
+            },
+            {
+                "nom": "Bamako, Mali",
+                "latitude": 12.6392,
+                "longitude": -8.0029
+            },
+            {
+                "nom": "Casablanca, Maroc",
+                "latitude": 33.5731,
+                "longitude": -7.5898
+            },
+            {
+                "nom": "Londres, Royaume-Uni",
+                "latitude": 51.5074,
+                "longitude": -0.1278
+            }
+        ]
+    }
+}
