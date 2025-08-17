@@ -123,11 +123,11 @@ function testApplication() {
         const produit = new Produit_1.Alimentaire(`Produit ${i}`, 5);
         const ajout = nouvelleCargaison.ajouterProduit(produit);
         if (!ajout) {
-            console.log(`❌ Impossible d'ajouter le produit ${i} (cargaison pleine)`);
+            console.log(`Impossible d'ajouter le produit ${i} (cargaison pleine)`);
             break;
         }
         else {
-            console.log(`✅ Produit ${i} ajouté (${nouvelleCargaison.nbProduits()}/10)`);
+            console.log(`Produit ${i} ajouté (${nouvelleCargaison.nbProduits()}/10)`);
         }
     }
     console.log("\n=== Fin des tests ===");
